@@ -3477,3 +3477,5 @@
 
 
 }).call(this);
+//to use with tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= numberWithCommas(value) %> (<%= percent %>%)"
+function numberWithCommas(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
